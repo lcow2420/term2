@@ -1,0 +1,385 @@
+/* General Styles */
+body {
+    /* font-family: 'Times New Roman', serif; */
+    font-size:105%;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+}
+
+header .logo img {
+    max-width: 100px;
+}
+
+.cart-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cart-button i {
+    font-size: 1.5em; /* Increase icon size */
+}
+
+.cart-counter {
+    position: absolute;
+    top: -10px; /* Adjust as needed */
+    right: -10px; /* Adjust as needed */
+    background: #dc3545;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px; /* Adjust size */
+    height: 20px; /* Adjust size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9em; /* Adjust font size */
+}
+
+.cart-button:hover {
+    background: #218838;
+}
+
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    color: #dc3545;
+}
+
+.modal-content h2 {
+    margin: 0 0 20px 0;
+}
+
+.modal-content button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.modal-content button:hover {
+    background-color: #218838;
+}
+
+.modal-content #modal-cancel {
+    background-color: #dc3545;
+}
+
+.modal-content #modal-cancel:hover {
+    background-color: #c82333;
+}
+
+
+/* Navigation Styles */
+nav {
+    background: #444;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background: #555;
+}
+
+/* Hero Image */
+#hero img {
+    width: 100%;
+    height: auto;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+/* About Section */
+#about {
+    background: #e9ecef;
+}
+
+#about p {
+    margin: 10px 0;
+}
+
+/* Team Section */
+#team {
+    background: #f8f9fa;
+}
+
+.team-grid {
+    padding-left: 50px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    background: #fff;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.team-card img {
+    padding-left: 65px;
+    padding-top: 40px;
+    width: 70%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.team-info {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Product Section */
+#products {
+    padding: 20px;
+    background: #f9f9f9;
+}
+
+.product-grid {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    padding-left: 120px;
+}
+
+.product-item {
+    background: #fff;
+    width: 23%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+.product-item .price {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.product-item button {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.product-item button:hover {
+    background: #218838;
+}
+
+/* Media Section */
+#media {
+    background: #d1ecf1;
+}
+
+.media-gallery {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.media-gallery img {
+    width: 100%;
+    max-width: 30%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* FAQs Section */
+#faqs {
+    background: #fefefe;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item h3 {
+    margin: 0;
+    color: #333;
+}
+
+/* Contact Section */
+#contact {
+    background: #f8d7da;
+}
+
+#contact p {
+    margin: 10px 0;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Cart Dialog */
+#cart-container {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#cart-container button {
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#cart-container button:hover {
+    background: #c82333;
+}
+
+#cart-items {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.cart-item {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#checkout-button {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#checkout-button:hover {
+    background: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .team-card, .product-item {
+        width: 100%;
+    }
+
+    .media-gallery img {
+        max-width: 100%;
+    }
+}
+.iframe-container {
+    text-align: center; /* Centers iframe horizontally */
+}
+.iframe-container iframe {
+    display: block; /* Makes iframe a block element */
+    margin: 0 auto; /* Centers iframe horizontally within its container */
+}

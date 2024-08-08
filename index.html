@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <title>Electric Fireplace | Home</title>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="#home"><img src="images/electric.png" alt="Fireplace Logo" /></a>
+        <button id="cart-button" class="cart-button">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-counter" class="cart-counter">0</span>
+        </button>
+
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#faqs">FAQs</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div id="hero" class="tab-desk">
+        <img src="images/banner2.jpg" alt="electric fireplace">
+    </div>
+
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p style="text-align: justify;">We offer the finest selection of electric fireplaces in the market, blending modern technology with
+                classic design. Our products are designed to provide the warmth and ambiance of a traditional fireplace
+                without the hassle, giving you the perfect combination of comfort and convenience.
+
+                Our electric fireplaces feature advanced heating technology, realistic flame effects, and customizable
+                settings to suit your needs. Whether you are looking to enhance the ambiance of your living room,
+                bedroom, or office, we have the perfect solution for you.
+
+                We pride ourselves on delivering high-quality, energy-efficient products that are easy to install and
+                maintain. Our dedicated customer service team is always here to help you find the ideal fireplace for
+                your space and ensure your complete satisfaction.
+
+                Experience the charm and elegance of a traditional fireplace with the modern benefits of our electric
+                fireplaces. Explore our collection today and bring warmth and style to your home.</p>
+        </section>
+        <section id="team">
+            <h2>Our Team</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="images/team1.jpg" alt="Team Member 1">
+                    <div class="team-info">
+                        <h3>John Doe</h3>
+                        <p>Lead Designer</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="images/team2.jpg" alt="Team Member 2">
+                    <div class="team-info">
+                        <h3>Jane Smith</h3>
+                        <p>Product Manager</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="images/team3.jpg" alt="Team Member 3">
+                    <div class="team-info">
+                        <h3>Emily Johnson</h3>
+                        <p>Marketing Specialist</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="images/img2.jpg" alt="Product 1">
+                    <h3>Electric Fireplace Model A</h3>
+                    <p>A sleek modern fireplace with adjustable heat settings.</p>
+                    <p class="price">$299.99</p>
+                    <button class="add-to-cart-button" data-name="Electric Fireplace Model A" data-price="299.99">Add to
+                        Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/prod1.webp" alt="Product 2">
+                    <h3>Electric Fireplace Model B</h3>
+                    <p>Classic design with a traditional feel and remote control.</p>
+                    <p class="price">$349.99</p>
+                    <button class="add-to-cart-button" data-name="Electric Fireplace Model B" data-price="349.99">Add to
+                        Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/prod2.jpg" alt="Product 3">
+                    <h3>Electric Fireplace Model C</h3>
+                    <p>Compact design, ideal for small spaces.</p>
+                    <p class="price">$199.99</p>
+                    <button class="add-to-cart-button" data-name="Electric Fireplace Model C" data-price="199.99">Add to
+                        Cart</button>
+                </div>
+
+                <div class="product-item">
+                    <img src="images/productweek.jpg" alt="Product 1">
+                    <h3>Electric Fireplace Model A</h3>
+                    <p>A modern fireplace with adjustable heat settings.</p>
+                    <p class="price">$299.99</p>
+                    <button class="add-to-cart-button" data-name="Electric Fireplace Model A" data-price="299.99">Add to
+                        Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/prod4.jpg" alt="Product 2">
+                    <h3>Electric Fireplace Model B</h3>
+                    <p>Classic design with a traditional feel and remote control.</p>
+                    <p class="price">$349.99</p>
+                    <button class="add-to-cart-button" data-name="Electric Fireplace Model B" data-price="349.99">Add to
+                        Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/prod2.jpg" alt="Product 3">
+                    <h3>Electric Fireplace Model C</h3>
+                    <p>Compact design, ideal for small spaces.</p>
+                    <p class="price">$199.99</p>
+                    <button class="add-to-cart-button" data-name="Electric Fireplace Model C" data-price="199.99">Add to
+                        Cart</button>
+                </div>
+            </div>
+
+        </section>
+        <section id="media">
+            <h4 style="text-align: center;">"Embrace Ambiance: Witness Our Electric Fireplace in Motion"</h4>
+            <div class="iframe-container">
+
+                <iframe id="video"
+                    src="https://player.vimeo.com/video/835458581?h=b12d30f22e&color=EF7800&title=0&byline=0"
+                    width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+                    allowfullscreen></iframe>
+
+
+            </div>
+        </section>
+        <section id="faqs">
+            <h2>FAQs</h2>
+            <div class="faq-item">
+                <h3>How do I install my electric fireplace?</h3>
+                <p>Installation instructions are included with your purchase. For additional support, refer to our
+                    installation guide online.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What is the warranty on your fireplaces?</h3>
+                <p>All our electric fireplaces come with a 2-year warranty covering parts and labor. Please refer to the
+                    warranty policy for details.</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us for more information about our products, services, or any other inquiries. We're
+                here to help!</p>
+            <p>Email: support@electricfireplace.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </section>
+    </main>
+
+    <!-- Checkout Modal -->
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" id="modal-close">&times;</span>
+            <h2>Checkout</h2>
+            <p>Are you sure you want to proceed to checkout?</p>
+            <button id="modal-confirm">Confirm</button>
+            <button id="modal-cancel">Cancel</button>
+        </div>
+    </div>
+
+
+    <div id="cart-container">
+        <button id="close-cart">Close</button>
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <p id="cart-total">Total: $0.00</p>
+        <button id="checkout-button">Checkout</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
