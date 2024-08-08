@@ -1,7 +1,39 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Function to fetch dynamic content
+    // Function to fetch and display products
     function fetchDynamicContent() {
-        console.log('Dynamic content fetching logic goes here.');
+        fetch('js/products.json')
+            .then(response => response.json())
+            .then(products => {
+                const productGrid = document.getElementById('product-grid');
+                productGrid.innerHTML = ''; // Clear existing content
+
+                products.forEach(product => {
+                    const productItem = document.createElement('div');
+                    productItem.classList.add('product-item');
+
+                    productItem.innerHTML = `
+                        <img src="${product.image}" alt="${product.name}">
+                        <h3>${product.name}</h3>
+                        <p>${product.description}</p>
+                        <p class="price">$${product.price.toFixed(2)}</p>
+                        <button class="add-to-cart-button" data-name="${product.name}" data-price="${product.price}">Add to Cart</button>
+                    `;
+
+                    productGrid.appendChild(productItem);
+                });
+
+                // Reattach event listeners to dynamically added buttons
+                document.querySelectorAll('.add-to-cart-button').forEach(button => {
+                    button.addEventListener('click', function() {
+                        const item = {
+                            name: this.dataset.name,
+                            price: this.dataset.price
+                        };
+                        addToCart(item);
+                    });
+                });
+            })
+            .catch(error => console.error('Error fetching products:', error));
     }
 
     fetchDynamicContent();
@@ -41,17 +73,6 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateCartCounter() {
         cartCounter.textContent = cart.length;
     }
-
-    // Event listener for "Add to Cart" buttons
-    document.querySelectorAll('.add-to-cart-button').forEach(button => {
-        button.addEventListener('click', function() {
-            const item = {
-                name: this.dataset.name,
-                price: this.dataset.price
-            };
-            addToCart(item);
-        });
-    });
 
     // Show the cart dialog
     cartButton.addEventListener('click', function() {

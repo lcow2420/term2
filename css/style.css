@@ -215,7 +215,7 @@ section h2 {
     display: flex;
     gap: 60px;
     flex-wrap: wrap;
-    padding-left: 120px;
+    padding-left: 50px;
 }
 
 .product-item {
@@ -252,22 +252,41 @@ section h2 {
 }
 
 /* Media Section */
+/* Media Section */
 #media {
     background: #d1ecf1;
+    padding: 20px; /* Adds padding for better spacing */
 }
 
+/* Media Gallery */
 .media-gallery {
-    display: flex;
+    /* display: flex; */
     gap: 10px;
     flex-wrap: wrap;
+    justify-content: center; /* Center the images */
 }
 
 .media-gallery img {
     width: 100%;
-    max-width: 30%;
-    height: auto;
+    max-width: 30%; /* Default width for larger screens */
+    /* height: auto; */
     border-radius: 5px;
+  
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .media-gallery img {
+        max-width: 20%; /* Adjust width for tablets and smaller devices */
+    }
+}
+
+@media (max-width: 480px) {
+    .media-gallery img {
+        max-width: 90%; /* Adjust width for mobile devices */
+    }
+}
+
 
 /* FAQs Section */
 #faqs {
@@ -376,10 +395,27 @@ footer p {
         max-width: 100%;
     }
 }
+/* Container for responsive iframe */
 .iframe-container {
-    text-align: center; /* Centers iframe horizontally */
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    max-width: 100%; /* Ensures the container does not exceed its parent's width */
+    margin: 0 auto; /* Centers the container */
+    width: 90%; /* Adjust to desired width relative to its parent */
+    max-width: 500px; /* Maximum width of the iframe container */
 }
+
+/* Styling for the iframe */
 .iframe-container iframe {
-    display: block; /* Makes iframe a block element */
-    margin: 0 auto; /* Centers iframe horizontally within its container */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    border: 0;
 }
+
+
+

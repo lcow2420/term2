@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Electric Fireplace Model A",
+        "price": 299.99,
+        "image": "images/img2.jpg",
+        "description": "A sleek modern fireplace with adjustable heat settings."
+    },
+    {
+        "name": "Electric Fireplace Model B",
+        "price": 349.99,
+        "image": "images/prod1.webp",
+        "description": "Classic design with a traditional feel and remote control."
+    },
+    {
+        "name": "Electric Fireplace Model C",
+        "price": 199.99,
+        "image": "images/prod2.jpg",
+        "description": "Compact design, ideal for small spaces."
+    },
+    {
+        "name": "Electric Fireplace Model D",
+        "price": 299.99,
+        "image": "images/productweek.jpg",
+        "description": "A modern fireplace with adjustable heat settings."
+    },
+    {
+        "name": "Electric Fireplace Model E",
+        "price": 349.99,
+        "image": "images/prod4.jpg",
+        "description": "Classic design with a traditional feel and remote control."
+    },
+    {
+        "name": "Electric Fireplace Model F",
+        "price": 199.99,
+        "image": "images/prod2.jpg",
+        "description": "Compact design, ideal for small spaces."
+    }
+]
